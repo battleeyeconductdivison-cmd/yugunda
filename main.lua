@@ -72,7 +72,7 @@ getgenv().loaded = true
 
 -- Library init
     getgenv().library = {
-        directory = "Pyrewtf",
+        directory = "halo.lol",
         folders = {
             "/fonts",
             "/configs",
@@ -87,7 +87,7 @@ getgenv().loaded = true
 
     local themes = {
         preset = {
-            accent = rgb(255, 81, 0, 0.94),
+          accent = Color3.fromRGB(115, 194, 251),
         }, 
 
         utility = {
@@ -519,9 +519,9 @@ getgenv().loaded = true
     -- Library element functions
         function library:window(properties)
             local cfg = { 
-                suffix = properties.suffix or properties.Suffix or "tech";
-                name = properties.name or properties.Name or "nebula";
-                game_name = properties.gameInfo or properties.game_info or properties.GameInfo or "Milenium for Counter-Strike: Global Offensive";
+                suffix = properties.suffix or properties.Suffix or "lol";
+                name = properties.name or properties.Name or "halo";
+                game_name = properties.gameInfo or properties.game_info or properties.GameInfo or "Halo.lol: Philly Streets 2";
                 size = properties.size or properties.Size or dim2(0, 700, 0, 565);
                 selected_tab;
                 items = {};
@@ -734,7 +734,7 @@ getgenv().loaded = true
                     Name = "\0";
                     TextColor3 = themes.preset.accent;
                     BorderColor3 = rgb(0, 0, 0);
-                    Text = '<font color="rgb(72, 72, 73)">∞ days left, </font>' .. cfg.name .. cfg.suffix;
+                    Text = "999 Days Left";
                     Size = dim2(1, 0, 0, 0);
                     Position = dim2(0, -10, 0.5, -1);
                     AnchorPoint = vec2(0, 0.5);
