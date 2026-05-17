@@ -732,9 +732,9 @@ getgenv().loaded = true
                     Parent = items[ "info" ];
                     RichText = true;
                     Name = "\0";
-                    TextColor3 = themes.preset.accent;
+                    TextColor3 = rgb(72, 72, 73);
                     BorderColor3 = rgb(0, 0, 0);
-               Text = '<font color="rgb(75, 75, 75)">Lifetime</font>'
+                    Text = "Lifetime";
                     Size = dim2(1, 0, 0, 0);
                     Position = dim2(0, -10, 0.5, -1);
                     AnchorPoint = vec2(0, 0.5);
